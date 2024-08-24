@@ -1,0 +1,23 @@
+---
+author: {{ book.author_text }}
+title: {{ book.title }}
+format:
+start_date: {{ book.start_date }}
+finish_date: {{ book.finish_date }}
+pages:
+occasion:
+cost:
+finished: {% if book.finish_date %}true{% endif %}
+notes:
+review:
+ISBN: {{ book.isbn }}
+to_be_processed:
+tags: #books 
+---
+
+Title: {{ book.title }}
+Author: [[{{ book.author_text }}]]
+
+Booktags:
+
+Obsidian tag: #books #bookwyrmimport

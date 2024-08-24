@@ -47,6 +47,10 @@
                 <a href="{{ url }}"{% if url in request.path %} class="is-active" aria-selected="true"{% endif %}>{% trans "Export Book List" %}</a>
             </li>
             <li>
+                {% url 'templated-export' as url %}
+                <a href="{{ url }}"{% if url in request.path %} class="is-active" aria-selected="true"{% endif %}>{% trans "Export Book List with a template" %}</a>
+            </li>
+            <li>
                 {% url 'user-import' as url %}
                 <a href="{{ url }}"{% if url in request.path %} class="is-active" aria-selected="true"{% endif %}>{% trans "Import BookWyrm Account" %}</a>
             </li>
