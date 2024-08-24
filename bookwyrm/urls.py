@@ -631,7 +631,11 @@ urlpatterns = [
         name="prompt-2fa",
     ),
     re_path(r"^preferences/export/?$", views.Export.as_view(), name="prefs-export"),
-    re_path(r"^preferences/templated-export/?$", views.ExportTemplatedBooksZip.as_view(), name="templated-export"),
+    re_path(
+        r"^preferences/templated-export/?$",
+        views.ExportTemplatedBooksZip.as_view(),
+        name="templated-export",
+    ),
     re_path(
         r"^preferences/user-export/?$",
         views.ExportUser.as_view(),
